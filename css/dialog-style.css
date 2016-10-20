@@ -1,0 +1,31 @@
+/** reset **/
+
+* { margin: 0; padding: 0; }
+
+body { font-size: 12px; padding: 20px; }
+
+button {display: block;  width: 100%; padding: 10px; color: #fff; border: none; border-radius: 10px; background: green; margin-bottom: 10px; }
+
+/** dialog **/
+.g-dialog-container { position: fixed; top: 0; right: 0; bottom: 0; left: 0; 
+    /*display: -webkit-box;*/
+    /*-webkit-box-pack:center;*/
+    /*-webkit-align-items: center;*/
+
+    display: -webkit-flex; background: rgba(0, 0, 0, .8);-webkit-align-items: center; -webkit-justify-content: center; }
+
+.g-dialog-container .dialog-window { padding: 1em; transition: all .3s cubic-bezier(0.51, 0.2, 0.31, 1.49); border-radius: 10px; background: rgba(0, 0, 0, .8); }
+
+.g-dialog-container .dialog-window button { display: inline-block; width: auto; margin: 0 .3em; padding: .8em 1.8em; border: none; border-radius: 5px; background: rgba(255, 255, 255, .5); text-shadow: 1px 1px 0 #666; -webkit-appearance: none; }
+
+.g-dialog-container .dialog-window button.green { background-color: rgba(2, 202, 200, .8); }
+
+.g-dialog-container .dialog-window button.red { background-color: rgba(251, 23, 50, .8); }
+
+.g-dialog-container .dialog-window .dialog-header { line-height: 50px; width: 50px; height: 50px; margin: 0 auto; text-align: center; }
+
+.g-dialog-container .dialog-window .dialog-header i { font-size: 50px !important; color:#fff;}
+
+.g-dialog-container .dialog-window .dialog-content { line-height: 2em; margin-top: .5em; text-align: center; color: #fff; }
+
+.g-dialog-container .dialog-window .dialog-footer { display: -webkit-flex; padding: 1em 1em 0; -webkit-align-items: center; -webkit-justify-content: center; }

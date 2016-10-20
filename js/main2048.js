@@ -242,7 +242,19 @@ function isgameover(){
 }
 
 function gameover(){
-	alert("gameover");
+	var d = $.Dialog({
+        type:"warning",
+        message:"游戏结束",
+        buttons:[
+            {
+                type: "red",
+                text:"重新开始",
+                callback:function(){
+                    newgame();
+                }
+            }
+        ]
+    });
 }
 
 function moveUp(){
